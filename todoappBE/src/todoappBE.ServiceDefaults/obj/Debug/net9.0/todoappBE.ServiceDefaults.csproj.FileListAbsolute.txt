@@ -1,0 +1,12 @@
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.ServiceDefaults\bin\Debug\net9.0\todoappBE.ServiceDefaults.deps.json
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.ServiceDefaults\bin\Debug\net9.0\todoappBE.ServiceDefaults.dll
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.ServiceDefaults\bin\Debug\net9.0\todoappBE.ServiceDefaults.pdb
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.ServiceDefaults\obj\Debug\net9.0\todoappBE.ServiceDefaults.csproj.AssemblyReference.cache
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.ServiceDefaults\obj\Debug\net9.0\todoappBE.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.ServiceDefaults\obj\Debug\net9.0\todoappBE.ServiceDefaults.AssemblyInfoInputs.cache
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.ServiceDefaults\obj\Debug\net9.0\todoappBE.ServiceDefaults.AssemblyInfo.cs
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.ServiceDefaults\obj\Debug\net9.0\todoappBE.ServiceDefaults.csproj.CoreCompileInputs.cache
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.ServiceDefaults\obj\Debug\net9.0\todoappBE.ServiceDefaults.dll
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.ServiceDefaults\obj\Debug\net9.0\refint\todoappBE.ServiceDefaults.dll
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.ServiceDefaults\obj\Debug\net9.0\todoappBE.ServiceDefaults.pdb
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.ServiceDefaults\obj\Debug\net9.0\ref\todoappBE.ServiceDefaults.dll

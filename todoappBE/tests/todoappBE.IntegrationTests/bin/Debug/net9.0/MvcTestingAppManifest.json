@@ -1,0 +1,6 @@
+{
+  "todoappBE.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.Core",
+  "todoappBE.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.Infrastructure",
+  "todoappBE.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\_Projects\\todoappBE\\todoappBE\\tests\\todoappBE.UnitTests",
+  "todoappBE.UseCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.UseCases"
+}

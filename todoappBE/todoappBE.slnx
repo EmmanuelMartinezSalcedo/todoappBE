@@ -1,0 +1,30 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path="CleanArchitecture.nuspec" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/todoappBE.AspireHost/todoappBE.AspireHost.csproj" />
+    <Project Path="src/todoappBE.ServiceDefaults/todoappBE.ServiceDefaults.csproj" />
+    <Project Path="src/todoappBE.Core/todoappBE.Core.csproj" />
+    <Project Path="src/todoappBE.Infrastructure/todoappBE.Infrastructure.csproj" />
+    <Project Path="src/todoappBE.UseCases/todoappBE.UseCases.csproj" />
+    <Project Path="src/todoappBE.Web/todoappBE.Web.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/todoappBE.FunctionalTests/todoappBE.FunctionalTests.csproj">
+      <BuildDependency Project="src/todoappBE.Web/todoappBE.Web.csproj" />
+    </Project>
+    <Project Path="tests/todoappBE.IntegrationTests/todoappBE.IntegrationTests.csproj">
+      <BuildDependency Project="src/todoappBE.Infrastructure/todoappBE.Infrastructure.csproj" />
+    </Project>
+    <Project Path="tests/todoappBE.UnitTests/todoappBE.UnitTests.csproj" />
+  </Folder>
+</Solution>

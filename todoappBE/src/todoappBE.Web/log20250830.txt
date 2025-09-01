@@ -1,0 +1,332 @@
+2025-08-30 18:59:03.951 -05:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-30 19:01:26.903 -05:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-30 19:03:35.264 -05:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-30 19:03:35.443 -05:00 [ERR] Failed executing DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-30 19:03:35.548 -05:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-30 19:03:35.556 -05:00 [INF] Applying migration '20250831000127_InitialCreation'.
+2025-08-30 19:04:42.691 -05:00 [INF] Registered 5 endpoints in 423 milliseconds.
+2025-08-30 19:04:43.522 -05:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-30 19:04:43.763 -05:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2025-08-30 19:04:43.912 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS c)
+2025-08-30 19:04:44.005 -05:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='Ardalis' (Nullable = false), @p1='3', @p2='Snowfrog' (Nullable = false), @p3='3'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Contributors" ("Name", "Status")
+VALUES (@p0, @p1)
+RETURNING "Id";
+INSERT INTO "Contributors" ("Name", "Status")
+VALUES (@p2, @p3)
+RETURNING "Id";
+2025-08-30 19:04:44.250 -05:00 [INF] Now listening on: https://localhost:64676
+2025-08-30 19:04:44.253 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-08-30 19:04:44.294 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-30 19:04:44.294 -05:00 [INF] Hosting environment: Development
+2025-08-30 19:04:44.294 -05:00 [INF] Content root path: C:\_Projects\todoappBE\todoappBE\src\todoappBE.Web
+2025-08-30 19:04:45.082 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2025-08-30 19:04:45.236 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 161.5872ms
+2025-08-30 19:04:45.240 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2025-08-30 19:04:45.259 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 18.8117ms
+2025-08-30 19:04:45.275 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui.css - null null
+2025-08-30 19:04:45.275 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-30 19:04:45.275 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.css - null null
+2025-08-30 19:04:45.275 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui-bundle.js - null null
+2025-08-30 19:04:45.275 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui-standalone-preset.js - null null
+2025-08-30 19:04:45.289 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 14.56ms
+2025-08-30 19:04:45.293 -05:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-08-30 19:04:45.294 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.css - 200 218 text/css 18.7187ms
+2025-08-30 19:04:45.334 -05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-08-30 19:04:45.334 -05:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-08-30 19:04:45.335 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui.css - 200 154988 text/css 60.6412ms
+2025-08-30 19:04:45.335 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui-standalone-preset.js - 200 229224 text/javascript 60.4911ms
+2025-08-30 19:04:45.347 -05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-08-30 19:04:45.348 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui-bundle.js - 200 1468327 text/javascript 72.7263ms
+2025-08-30 19:04:45.479 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2025-08-30 19:04:45.523 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.3468ms
+2025-08-30 19:04:45.984 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2025-08-30 19:04:46.030 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 46.477ms
+2025-08-30 19:04:46.054 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/favicon-32x32.png - null null
+2025-08-30 19:04:46.055 -05:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-08-30 19:04:46.055 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/favicon-32x32.png - 200 628 image/png 0.5107ms
+2025-08-30 19:33:40.767 -05:00 [INF] Registered 6 endpoints in 1,796 milliseconds.
+2025-08-30 19:33:41.753 -05:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-30 19:33:41.983 -05:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2025-08-30 19:33:42.127 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS c)
+2025-08-30 19:33:42.335 -05:00 [INF] Now listening on: https://localhost:50446
+2025-08-30 19:33:42.337 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-08-30 19:33:42.373 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-30 19:33:42.373 -05:00 [INF] Hosting environment: Development
+2025-08-30 19:33:42.373 -05:00 [INF] Content root path: C:\_Projects\todoappBE\todoappBE\src\todoappBE.Web
+2025-08-30 19:33:44.325 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2025-08-30 19:33:44.481 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 162.3012ms
+2025-08-30 19:33:44.488 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2025-08-30 19:33:44.506 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 19.0167ms
+2025-08-30 19:33:44.518 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui.css - null null
+2025-08-30 19:33:44.519 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui-bundle.js - null null
+2025-08-30 19:33:44.519 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.css - null null
+2025-08-30 19:33:44.520 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui-standalone-preset.js - null null
+2025-08-30 19:33:44.557 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-30 19:33:44.568 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 36.1211ms
+2025-08-30 19:33:44.603 -05:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-08-30 19:33:44.636 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.css - 200 218 text/css 117.1866ms
+2025-08-30 19:33:44.639 -05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-08-30 19:33:44.639 -05:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-08-30 19:33:44.640 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui-standalone-preset.js - 200 229224 text/javascript 120.4177ms
+2025-08-30 19:33:44.640 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui.css - 200 154988 text/css 121.7931ms
+2025-08-30 19:33:44.642 -05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-08-30 19:33:44.642 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui-bundle.js - 200 1468327 text/javascript 123.124ms
+2025-08-30 19:33:44.738 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2025-08-30 19:33:44.816 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 78.1781ms
+2025-08-30 19:33:45.346 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2025-08-30 19:33:45.417 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 70.8003ms
+2025-08-30 19:34:00.221 -05:00 [INF] Request starting HTTP/2 POST https://localhost:57679/Users - application/json 66
+2025-08-30 19:34:00.225 -05:00 [INF] Executing endpoint 'HTTP: POST /Users'
+2025-08-30 19:34:00.293 -05:00 [INF] Executed endpoint 'HTTP: POST /Users'
+2025-08-30 19:34:00.294 -05:00 [INF] Request finished HTTP/2 POST https://localhost:57679/Users - 400 null application/problem+json; charset=utf-8 73.2547ms
+2025-08-30 19:34:58.944 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2025-08-30 19:34:58.946 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 2.2129ms
+2025-08-30 19:34:58.967 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2025-08-30 19:34:58.967 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-30 19:34:58.967 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 0.4849ms
+2025-08-30 19:34:58.970 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 3.5817ms
+2025-08-30 19:34:59.100 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2025-08-30 19:34:59.101 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.5502ms
+2025-08-30 19:34:59.112 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/favicon-32x32.png - null null
+2025-08-30 19:34:59.112 -05:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-08-30 19:34:59.112 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/favicon-32x32.png - 200 628 image/png 0.5175ms
+2025-08-30 19:35:09.088 -05:00 [INF] Registered 6 endpoints in 361 milliseconds.
+2025-08-30 19:35:09.626 -05:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-30 19:35:09.888 -05:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2025-08-30 19:35:10.043 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS c)
+2025-08-30 19:35:10.204 -05:00 [INF] Now listening on: https://localhost:50602
+2025-08-30 19:35:10.206 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-08-30 19:35:10.239 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-30 19:35:10.239 -05:00 [INF] Hosting environment: Development
+2025-08-30 19:35:10.239 -05:00 [INF] Content root path: C:\_Projects\todoappBE\todoappBE\src\todoappBE.Web
+2025-08-30 19:35:10.825 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2025-08-30 19:35:10.927 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 109.2912ms
+2025-08-30 19:35:10.931 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2025-08-30 19:35:10.946 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 15.4993ms
+2025-08-30 19:35:10.985 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-30 19:35:10.988 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 3.483ms
+2025-08-30 19:35:11.140 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2025-08-30 19:35:11.166 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.3391ms
+2025-08-30 19:35:11.585 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2025-08-30 19:35:11.608 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 23.2098ms
+2025-08-30 19:35:16.896 -05:00 [INF] Request starting HTTP/2 POST https://localhost:57679/Users - application/json 82
+2025-08-30 19:35:16.900 -05:00 [INF] Executing endpoint 'HTTP: POST /Users'
+2025-08-30 19:35:16.945 -05:00 [INF] Executed endpoint 'HTTP: POST /Users'
+2025-08-30 19:35:16.945 -05:00 [INF] Request finished HTTP/2 POST https://localhost:57679/Users - 400 null application/problem+json; charset=utf-8 49.1721ms
+2025-08-30 19:35:22.922 -05:00 [INF] Request starting HTTP/2 POST https://localhost:57679/Users - application/json 86
+2025-08-30 19:35:22.923 -05:00 [INF] Executing endpoint 'HTTP: POST /Users'
+2025-08-30 19:35:22.931 -05:00 [INF] Handling CreateUserCommand
+2025-08-30 19:35:22.932 -05:00 [INF] Property Name : Jhon Doe
+2025-08-30 19:35:22.932 -05:00 [INF] Property Email : example@place.com
+2025-08-30 19:35:22.932 -05:00 [INF] Property PasswordHash : 12345678
+2025-08-30 19:35:23.111 -05:00 [INF] Executed DbCommand (18ms) [Parameters=[@p0='2025-08-31T00:35:22.9403655Z' (DbType = DateTime), @p1='example@place.com' (Nullable = false), @p2='Jhon Doe' (Nullable = false), @p3='12345678' (Nullable = false)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("CreatedAt", "Email", "Name", "PasswordHash")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2025-08-30 19:35:23.138 -05:00 [INF] Handled CreateUserCommand with Ardalis.Result.Result`1[System.Int32] in 205 ms
+2025-08-30 19:35:23.145 -05:00 [INF] Handling CreateUserCommand2
+2025-08-30 19:35:23.146 -05:00 [INF] Property Name : Jhon Doe
+2025-08-30 19:35:23.146 -05:00 [INF] Property Email : example@place.com
+2025-08-30 19:35:23.146 -05:00 [INF] Property PasswordHash : 12345678
+2025-08-30 19:35:23.155 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='2025-08-31T00:35:23.1474382Z' (DbType = DateTime), @p1='example@place.com' (Nullable = false), @p2='Jhon Doe' (Nullable = false), @p3='12345678' (Nullable = false)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("CreatedAt", "Email", "Name", "PasswordHash")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2025-08-30 19:35:23.156 -05:00 [INF] Handled CreateUserCommand2 with Ardalis.Result.Result`1[System.Int32] in 9 ms
+2025-08-30 19:35:23.158 -05:00 [INF] Executed endpoint 'HTTP: POST /Users'
+2025-08-30 19:35:23.161 -05:00 [INF] Request finished HTTP/2 POST https://localhost:57679/Users - 200 null application/json; charset=utf-8 238.4998ms
+2025-08-30 19:35:40.943 -05:00 [INF] Request starting HTTP/2 POST https://localhost:57679/Users - application/json 86
+2025-08-30 19:35:40.944 -05:00 [INF] Executing endpoint 'HTTP: POST /Users'
+2025-08-30 19:35:40.944 -05:00 [INF] Handling CreateUserCommand
+2025-08-30 19:35:40.944 -05:00 [INF] Property Name : Jhon Doe
+2025-08-30 19:35:40.944 -05:00 [INF] Property Email : example@place.com
+2025-08-30 19:35:40.944 -05:00 [INF] Property PasswordHash : 12345678
+2025-08-30 19:35:40.996 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='2025-08-31T00:35:40.9475895Z' (DbType = DateTime), @p1='example@place.com' (Nullable = false), @p2='Jhon Doe' (Nullable = false), @p3='12345678' (Nullable = false)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("CreatedAt", "Email", "Name", "PasswordHash")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2025-08-30 19:35:40.996 -05:00 [INF] Handled CreateUserCommand with Ardalis.Result.Result`1[System.Int32] in 51 ms
+2025-08-30 19:35:40.997 -05:00 [INF] Handling CreateUserCommand2
+2025-08-30 19:35:40.997 -05:00 [INF] Property Name : Jhon Doe
+2025-08-30 19:35:40.997 -05:00 [INF] Property Email : example@place.com
+2025-08-30 19:35:40.997 -05:00 [INF] Property PasswordHash : 12345678
+2025-08-30 19:35:41.002 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='2025-08-31T00:35:40.9972369Z' (DbType = DateTime), @p1='example@place.com' (Nullable = false), @p2='Jhon Doe' (Nullable = false), @p3='12345678' (Nullable = false)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("CreatedAt", "Email", "Name", "PasswordHash")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2025-08-30 19:35:41.002 -05:00 [INF] Handled CreateUserCommand2 with Ardalis.Result.Result`1[System.Int32] in 5 ms
+2025-08-30 19:35:41.002 -05:00 [INF] Executed endpoint 'HTTP: POST /Users'
+2025-08-30 19:35:41.003 -05:00 [INF] Request finished HTTP/2 POST https://localhost:57679/Users - 200 null application/json; charset=utf-8 59.6806ms
+2025-08-30 19:40:14.019 -05:00 [INF] Registered 6 endpoints in 348 milliseconds.
+2025-08-30 19:40:14.545 -05:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-30 19:40:14.776 -05:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2025-08-30 19:40:14.920 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS c)
+2025-08-30 19:40:15.098 -05:00 [INF] Now listening on: https://localhost:51132
+2025-08-30 19:40:15.101 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-08-30 19:40:15.136 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-30 19:40:15.136 -05:00 [INF] Hosting environment: Development
+2025-08-30 19:40:15.136 -05:00 [INF] Content root path: C:\_Projects\todoappBE\todoappBE\src\todoappBE.Web
+2025-08-30 19:40:32.262 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2025-08-30 19:40:32.320 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 68.0103ms
+2025-08-30 19:40:32.325 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2025-08-30 19:40:32.365 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 40.7935ms
+2025-08-30 19:40:32.372 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-30 19:40:32.378 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 6.9146ms
+2025-08-30 19:40:32.622 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2025-08-30 19:40:32.648 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.8922ms
+2025-08-30 19:40:32.991 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2025-08-30 19:40:33.029 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 37.9458ms
+2025-08-30 19:40:36.704 -05:00 [INF] Request starting HTTP/2 POST https://localhost:57679/Users - application/json 86
+2025-08-30 19:40:36.707 -05:00 [INF] Executing endpoint 'HTTP: POST /Users'
+2025-08-30 19:40:36.743 -05:00 [INF] Handling CreateUserCommand
+2025-08-30 19:40:36.743 -05:00 [INF] Property Name : Jhon Doe
+2025-08-30 19:40:36.743 -05:00 [INF] Property Email : example@place.com
+2025-08-30 19:40:36.744 -05:00 [INF] Property PasswordHash : 12345678
+2025-08-30 19:40:36.848 -05:00 [INF] Executed DbCommand (11ms) [Parameters=[@p0='2025-08-31T00:40:36.7476960Z' (DbType = DateTime), @p1='example@place.com' (Nullable = false), @p2='Jhon Doe' (Nullable = false), @p3='12345678' (Nullable = false)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("CreatedAt", "Email", "Name", "PasswordHash")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2025-08-30 19:40:36.863 -05:00 [INF] Handled CreateUserCommand with Ardalis.Result.Result`1[System.Int32] in 119 ms
+2025-08-30 19:40:36.866 -05:00 [INF] Executed endpoint 'HTTP: POST /Users'
+2025-08-30 19:40:36.870 -05:00 [INF] Request finished HTTP/2 POST https://localhost:57679/Users - 200 null application/json; charset=utf-8 165.4275ms
+2025-08-30 19:55:16.455 -05:00 [INF] Registered 6 endpoints in 324 milliseconds.
+2025-08-30 19:55:16.967 -05:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-30 19:55:17.239 -05:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2025-08-30 19:55:17.400 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS c)
+2025-08-30 19:55:17.576 -05:00 [INF] Now listening on: https://localhost:52433
+2025-08-30 19:55:17.579 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-08-30 19:55:17.614 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-30 19:55:17.614 -05:00 [INF] Hosting environment: Development
+2025-08-30 19:55:17.614 -05:00 [INF] Content root path: C:\_Projects\todoappBE\todoappBE\src\todoappBE.Web
+2025-08-30 19:55:18.298 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2025-08-30 19:55:18.377 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 86.5707ms
+2025-08-30 19:55:18.382 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2025-08-30 19:55:18.399 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 17.751ms
+2025-08-30 19:55:18.428 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-30 19:55:18.432 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 3.7122ms
+2025-08-30 19:55:18.616 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2025-08-30 19:55:18.633 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.4987ms
+2025-08-30 19:55:19.046 -05:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2025-08-30 19:55:19.072 -05:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 26.2473ms
+2025-08-30 19:55:21.953 -05:00 [INF] Request starting HTTP/2 POST https://localhost:57679/Users - application/json 86
+2025-08-30 19:55:21.955 -05:00 [INF] Executing endpoint 'HTTP: POST /Users'
+2025-08-30 19:55:21.994 -05:00 [INF] Handling CreateUserCommand
+2025-08-30 19:55:21.994 -05:00 [INF] Property Name : Jhon Doe
+2025-08-30 19:55:21.995 -05:00 [INF] Property Email : example@place.com
+2025-08-30 19:55:21.995 -05:00 [INF] Property PasswordHash : 12345678
+2025-08-30 19:55:22.323 -05:00 [INF] Executed DbCommand (12ms) [Parameters=[@p0='2025-08-31T00:55:22.2207473Z' (DbType = DateTime), @p1='example@place.com' (Nullable = false), @p2='Jhon Doe' (Nullable = false), @p3='$2a$11$s29CpJ/ca5GOzd4itL7QTeuwC6rGasns6SQTJvLMP3ADLVPAX/e5K' (Nullable = false)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("CreatedAt", "Email", "Name", "PasswordHash")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2025-08-30 19:55:22.339 -05:00 [INF] Handled CreateUserCommand with Ardalis.Result.Result`1[System.Int32] in 344 ms
+2025-08-30 19:55:22.342 -05:00 [INF] Executed endpoint 'HTTP: POST /Users'
+2025-08-30 19:55:22.345 -05:00 [INF] Request finished HTTP/2 POST https://localhost:57679/Users - 200 null application/json; charset=utf-8 392.1673ms

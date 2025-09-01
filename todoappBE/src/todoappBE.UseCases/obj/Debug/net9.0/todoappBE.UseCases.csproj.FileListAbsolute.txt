@@ -1,0 +1,15 @@
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.UseCases\bin\Debug\net9.0\todoappBE.UseCases.deps.json
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.UseCases\bin\Debug\net9.0\todoappBE.UseCases.dll
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.UseCases\bin\Debug\net9.0\todoappBE.UseCases.pdb
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.UseCases\bin\Debug\net9.0\todoappBE.Core.dll
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.UseCases\bin\Debug\net9.0\todoappBE.Core.pdb
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.UseCases\obj\Debug\net9.0\todoappBE.UseCases.csproj.AssemblyReference.cache
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.UseCases\obj\Debug\net9.0\todoappBE.UseCases.GeneratedMSBuildEditorConfig.editorconfig
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.UseCases\obj\Debug\net9.0\todoappBE.UseCases.AssemblyInfoInputs.cache
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.UseCases\obj\Debug\net9.0\todoappBE.UseCases.AssemblyInfo.cs
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.UseCases\obj\Debug\net9.0\todoappBE.UseCases.csproj.CoreCompileInputs.cache
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.UseCases\obj\Debug\net9.0\todoappB.AD0258D1.Up2Date
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.UseCases\obj\Debug\net9.0\todoappBE.UseCases.dll
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.UseCases\obj\Debug\net9.0\refint\todoappBE.UseCases.dll
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.UseCases\obj\Debug\net9.0\todoappBE.UseCases.pdb
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.UseCases\obj\Debug\net9.0\ref\todoappBE.UseCases.dll
