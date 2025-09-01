@@ -1,5 +1,4 @@
 ﻿using Ardalis.SharedKernel;
-using FastEndpoints;
 using Microsoft.AspNetCore.Authorization;
 using todoappBE.UseCases.Users;
 using todoAppBE.Core.UserAggregate;
@@ -7,7 +6,7 @@ using todoAppBE.Core.UserAggregate;
 namespace todoappBE.Web.Users;
 
 [Authorize]
-public class Me : EndpointWithoutRequest<UserDTO>
+public class Me : EndpointWithoutRequest<UserNameDTO>
 {
   private readonly IRepository<User> _userRepository;
 
@@ -37,9 +36,9 @@ public class Me : EndpointWithoutRequest<UserDTO>
       return;
     }
 
-    var userDto = new UserDTO(user.Id, user.Name, user.Email, user.CreatedAt);
+    var userNameDto = new UserNameDTO(user.Name);
 
-    await SendAsync(userDto, cancellation: ct);
+    await SendAsync(userNameDto, cancellation: ct);
   }
 
 }

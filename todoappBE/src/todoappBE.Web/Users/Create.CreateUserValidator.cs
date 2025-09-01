@@ -17,7 +17,7 @@ public class CreateUserValidator : Validator<CreateUserRequest>
       .EmailAddress().WithMessage("Email must be a valid email address.")
       .MaximumLength(DataSchemaConstants.DEFAULT_EMAIL_LENGTH).WithMessage($"Email cannot exceed {DataSchemaConstants.DEFAULT_EMAIL_LENGTH} characters.");
 
-    RuleFor(x => x.PasswordHash)
+    RuleFor(x => x.Password)
       .NotEmpty().WithMessage("Password is required.")
       .MinimumLength(8).WithMessage("Password must be at least 8 characters long.")
       .MaximumLength(100).WithMessage("Password cannot exceed 100 characters.");

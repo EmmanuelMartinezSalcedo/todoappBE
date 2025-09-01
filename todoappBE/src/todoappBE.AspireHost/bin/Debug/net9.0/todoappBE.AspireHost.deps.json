@@ -953,7 +953,14 @@
           }
         }
       },
-      "System.IO.Pipelines/9.0.6": {},
+      "System.IO.Pipelines/9.0.6": {
+        "runtime": {
+          "lib/net9.0/System.IO.Pipelines.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.625.26613"
+          }
+        }
+      },
       "System.Threading.RateLimiting/8.0.0": {},
       "YamlDotNet/16.0.0": {
         "runtime": {

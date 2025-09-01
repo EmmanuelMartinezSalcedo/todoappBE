@@ -10,3 +10,4 @@ C:\_Projects\todoappBE\todoappBE\src\todoappBE.Core\obj\Debug\net9.0\todoappBE.C
 C:\_Projects\todoappBE\todoappBE\src\todoappBE.Core\obj\Debug\net9.0\refint\todoappBE.Core.dll
 C:\_Projects\todoappBE\todoappBE\src\todoappBE.Core\obj\Debug\net9.0\todoappBE.Core.pdb
 C:\_Projects\todoappBE\todoappBE\src\todoappBE.Core\obj\Debug\net9.0\ref\todoappBE.Core.dll
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.Core\obj\Debug\net9.0\todoappBE.Core.sourcelink.json

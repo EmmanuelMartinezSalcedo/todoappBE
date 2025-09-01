@@ -3,23 +3,6 @@
 namespace todoappBE.Web.Users;
 
 public class Create(IMediator _mediator)
-  : Endpoint<CreateUserRequest, CreateUserResponse>
-{
-  public override void Configure()
-  {
-    Post(CreateUserRequest.Route);
-    AllowAnonymous();
-    Summary(s =>
-    {
-      s.ExampleRequest = new CreateUserRequest { Name = "Jhon Doe", Email = "example@place.com", PasswordHash="12345678" };
-    });
-  }
-
-  using todoappBE.UseCases.Users.Create;
-
-namespace todoappBE.Web.Users;
-
-public class Create(IMediator _mediator)
     : Endpoint<CreateUserRequest, CreateUserResponse>
 {
   public override void Configure()
@@ -32,8 +15,20 @@ public class Create(IMediator _mediator)
       {
         Name = "Jhon Doe",
         Email = "example@place.com",
-        PasswordHash = "12345678"
+        Password = "12345678"
       };
+
+      s.Response(
+        StatusCodes.Status200OK,
+        "User created",
+        example: new CreateUserResponse(1, "John Doe")
+      );
+
+      s.Response(
+        StatusCodes.Status409Conflict,
+        "Email already in use",
+        example: new CreateUserResponse { Error = "Email already in use" }
+      );
     });
   }
 
@@ -42,7 +37,7 @@ public class Create(IMediator _mediator)
       CancellationToken cancellationToken)
   {
     var result = await _mediator.Send(
-        new CreateUserCommand(request.Name!, request.Email!, request.PasswordHash!),
+        new CreateUserCommand(request.Name!, request.Email!, request.Password!),
         cancellationToken);
 
     if (result.IsSuccess)
@@ -52,6 +47,13 @@ public class Create(IMediator _mediator)
         Message = "User created successfully",
         Error = null
       };
+      return;
+    }
+
+    if (result.Errors.FirstOrDefault() == "Email already in use")
+    {
+      var conflictResponse = new CreateUserResponse { Error = "Email already in use" };
+      await SendAsync(conflictResponse, StatusCodes.Status409Conflict, cancellationToken);
       return;
     }
 

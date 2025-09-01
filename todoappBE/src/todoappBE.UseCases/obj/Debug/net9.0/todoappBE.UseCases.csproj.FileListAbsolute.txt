@@ -13,3 +13,4 @@ C:\_Projects\todoappBE\todoappBE\src\todoappBE.UseCases\obj\Debug\net9.0\todoapp
 C:\_Projects\todoappBE\todoappBE\src\todoappBE.UseCases\obj\Debug\net9.0\refint\todoappBE.UseCases.dll
 C:\_Projects\todoappBE\todoappBE\src\todoappBE.UseCases\obj\Debug\net9.0\todoappBE.UseCases.pdb
 C:\_Projects\todoappBE\todoappBE\src\todoappBE.UseCases\obj\Debug\net9.0\ref\todoappBE.UseCases.dll
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.UseCases\obj\Debug\net9.0\todoappBE.UseCases.sourcelink.json

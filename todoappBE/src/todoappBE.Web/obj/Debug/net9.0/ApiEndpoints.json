@@ -137,6 +137,13 @@
           "application/json"
         ],
         "StatusCode": 200
+      },
+      {
+        "Type": "todoappBE.Web.Users.CreateUserResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 409
       }
     ],
     "EndpointName": "todoappBEWebUsersCreate"
@@ -209,7 +216,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "todoappBE.UseCases.Users.UserDTO",
+        "Type": "todoappBE.UseCases.Users.UserNameDTO",
         "MediaTypes": [
           "application/json"
         ],

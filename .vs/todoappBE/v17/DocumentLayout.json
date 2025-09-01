@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\_Projects\\todoappBE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A2C2C4E-3175-48F1-BD4E-1ABE24B51BBA}|todoappBE\\src\\todoappBE.Web\\todoappBE.Web.csproj|c:\\_projects\\todoappbe\\todoappbe\\src\\todoappbe.web\\users\\create.createuservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A2C2C4E-3175-48F1-BD4E-1ABE24B51BBA}|todoappBE\\src\\todoappBE.Web\\todoappBE.Web.csproj|solutionrelative:todoappbe\\src\\todoappbe.web\\users\\create.createuservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A2C2C4E-3175-48F1-BD4E-1ABE24B51BBA}|todoappBE\\src\\todoappBE.Web\\todoappBE.Web.csproj|c:\\_projects\\todoappbe\\todoappbe\\src\\todoappbe.web\\users\\create.createuserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A2C2C4E-3175-48F1-BD4E-1ABE24B51BBA}|todoappBE\\src\\todoappBE.Web\\todoappBE.Web.csproj|solutionrelative:todoappbe\\src\\todoappbe.web\\users\\create.createuserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A2C2C4E-3175-48F1-BD4E-1ABE24B51BBA}|todoappBE\\src\\todoappBE.Web\\todoappBE.Web.csproj|c:\\_projects\\todoappbe\\todoappbe\\src\\todoappbe.web\\users\\create.createuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A2C2C4E-3175-48F1-BD4E-1ABE24B51BBA}|todoappBE\\src\\todoappBE.Web\\todoappBE.Web.csproj|solutionrelative:todoappbe\\src\\todoappbe.web\\users\\create.createuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2A2C2C4E-3175-48F1-BD4E-1ABE24B51BBA}|todoappBE\\src\\todoappBE.Web\\todoappBE.Web.csproj|c:\\_projects\\todoappbe\\todoappbe\\src\\todoappbe.web\\users\\create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A2C2C4E-3175-48F1-BD4E-1ABE24B51BBA}|todoappBE\\src\\todoappBE.Web\\todoappBE.Web.csproj|solutionrelative:todoappbe\\src\\todoappbe.web\\users\\create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C09175F-D2B0-4B8F-A57B-A951DEDA1AAD}|todoappBE\\src\\todoappBE.UseCases\\todoappBE.UseCases.csproj|c:\\_projects\\todoappbe\\todoappbe\\src\\todoappbe.usecases\\users\\create\\createuserhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C09175F-D2B0-4B8F-A57B-A951DEDA1AAD}|todoappBE\\src\\todoappBE.UseCases\\todoappBE.UseCases.csproj|solutionrelative:todoappbe\\src\\todoappbe.usecases\\users\\create\\createuserhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A2C2C4E-3175-48F1-BD4E-1ABE24B51BBA}|todoappBE\\src\\todoappBE.Web\\todoappBE.Web.csproj|c:\\_projects\\todoappbe\\todoappbe\\src\\todoappbe.web\\users\\logout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A2C2C4E-3175-48F1-BD4E-1ABE24B51BBA}|todoappBE\\src\\todoappBE.Web\\todoappBE.Web.csproj|solutionrelative:todoappbe\\src\\todoappbe.web\\users\\logout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A2C2C4E-3175-48F1-BD4E-1ABE24B51BBA}|todoappBE\\src\\todoappBE.Web\\todoappBE.Web.csproj|c:\\_projects\\todoappbe\\todoappbe\\src\\todoappbe.web\\users\\me.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A2C2C4E-3175-48F1-BD4E-1ABE24B51BBA}|todoappBE\\src\\todoappBE.Web\\todoappBE.Web.csproj|solutionrelative:todoappbe\\src\\todoappbe.web\\users\\me.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C09175F-D2B0-4B8F-A57B-A951DEDA1AAD}|todoappBE\\src\\todoappBE.UseCases\\todoappBE.UseCases.csproj|c:\\_projects\\todoappbe\\todoappbe\\src\\todoappbe.usecases\\users\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C09175F-D2B0-4B8F-A57B-A951DEDA1AAD}|todoappBE\\src\\todoappBE.UseCases\\todoappBE.UseCases.csproj|solutionrelative:todoappbe\\src\\todoappbe.usecases\\users\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A2C2C4E-3175-48F1-BD4E-1ABE24B51BBA}|todoappBE\\src\\todoappBE.Web\\todoappBE.Web.csproj|c:\\_projects\\todoappbe\\todoappbe\\src\\todoappbe.web\\users\\me.meuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A2C2C4E-3175-48F1-BD4E-1ABE24B51BBA}|todoappBE\\src\\todoappBE.Web\\todoappBE.Web.csproj|solutionrelative:todoappbe\\src\\todoappbe.web\\users\\me.meuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A2C2C4E-3175-48F1-BD4E-1ABE24B51BBA}|todoappBE\\src\\todoappBE.Web\\todoappBE.Web.csproj|c:\\_projects\\todoappbe\\todoappbe\\src\\todoappbe.web\\users\\create.createuserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A2C2C4E-3175-48F1-BD4E-1ABE24B51BBA}|todoappBE\\src\\todoappBE.Web\\todoappBE.Web.csproj|solutionrelative:todoappbe\\src\\todoappbe.web\\users\\create.createuserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A2C2C4E-3175-48F1-BD4E-1ABE24B51BBA}|todoappBE\\src\\todoappBE.Web\\todoappBE.Web.csproj|c:\\_projects\\todoappbe\\todoappbe\\src\\todoappbe.web\\users\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,82 +38,95 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Create.CreateUserValidator.cs",
-              "DocumentMoniker": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.Web\\Users\\Create.CreateUserValidator.cs",
-              "RelativeDocumentMoniker": "todoappBE\\src\\todoappBE.Web\\Users\\Create.CreateUserValidator.cs",
-              "ToolTip": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.Web\\Users\\Create.CreateUserValidator.cs",
-              "RelativeToolTip": "todoappBE\\src\\todoappBE.Web\\Users\\Create.CreateUserValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T16:41:23.816Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Create.CreateUserRequest.cs",
-              "DocumentMoniker": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.Web\\Users\\Create.CreateUserRequest.cs",
-              "RelativeDocumentMoniker": "todoappBE\\src\\todoappBE.Web\\Users\\Create.CreateUserRequest.cs",
-              "ToolTip": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.Web\\Users\\Create.CreateUserRequest.cs",
-              "RelativeToolTip": "todoappBE\\src\\todoappBE.Web\\Users\\Create.CreateUserRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T16:40:01.56Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Create.CreateUserResponse.cs",
-              "DocumentMoniker": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.Web\\Users\\Create.CreateUserResponse.cs",
-              "RelativeDocumentMoniker": "todoappBE\\src\\todoappBE.Web\\Users\\Create.CreateUserResponse.cs",
-              "ToolTip": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.Web\\Users\\Create.CreateUserResponse.cs",
-              "RelativeToolTip": "todoappBE\\src\\todoappBE.Web\\Users\\Create.CreateUserResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Title": "Logout.cs",
+              "DocumentMoniker": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.Web\\Users\\Logout.cs",
+              "RelativeDocumentMoniker": "todoappBE\\src\\todoappBE.Web\\Users\\Logout.cs",
+              "ToolTip": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.Web\\Users\\Logout.cs",
+              "RelativeToolTip": "todoappBE\\src\\todoappBE.Web\\Users\\Logout.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T16:39:11.553Z",
+              "WhenOpened": "2025-09-01T21:51:18.769Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Create.cs",
-              "DocumentMoniker": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.Web\\Users\\Create.cs",
-              "RelativeDocumentMoniker": "todoappBE\\src\\todoappBE.Web\\Users\\Create.cs",
-              "ToolTip": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.Web\\Users\\Create.cs",
-              "RelativeToolTip": "todoappBE\\src\\todoappBE.Web\\Users\\Create.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAswD8AAAAPAAAAAAAAAA==",
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.UseCases\\Users\\UserDTO.cs",
+              "RelativeDocumentMoniker": "todoappBE\\src\\todoappBE.UseCases\\Users\\UserDTO.cs",
+              "ToolTip": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.UseCases\\Users\\UserDTO.cs",
+              "RelativeToolTip": "todoappBE\\src\\todoappBE.UseCases\\Users\\UserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T16:38:02.433Z",
+              "WhenOpened": "2025-09-01T21:41:37.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Me.cs",
+              "DocumentMoniker": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.Web\\Users\\Me.cs",
+              "RelativeDocumentMoniker": "todoappBE\\src\\todoappBE.Web\\Users\\Me.cs",
+              "ToolTip": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.Web\\Users\\Me.cs",
+              "RelativeToolTip": "todoappBE\\src\\todoappBE.Web\\Users\\Me.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T21:40:43.348Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CreateUserHandler.cs",
-              "DocumentMoniker": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.UseCases\\Users\\Create\\CreateUserHandler.cs",
-              "RelativeDocumentMoniker": "todoappBE\\src\\todoappBE.UseCases\\Users\\Create\\CreateUserHandler.cs",
-              "ToolTip": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.UseCases\\Users\\Create\\CreateUserHandler.cs",
-              "RelativeToolTip": "todoappBE\\src\\todoappBE.UseCases\\Users\\Create\\CreateUserHandler.cs",
+              "Title": "Me.MeUserRequest.cs",
+              "DocumentMoniker": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.Web\\Users\\Me.MeUserRequest.cs",
+              "RelativeDocumentMoniker": "todoappBE\\src\\todoappBE.Web\\Users\\Me.MeUserRequest.cs",
+              "ToolTip": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.Web\\Users\\Me.MeUserRequest.cs",
+              "RelativeToolTip": "todoappBE\\src\\todoappBE.Web\\Users\\Me.MeUserRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T16:37:22.857Z",
+              "WhenOpened": "2025-09-01T21:40:41.147Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Create.CreateUserResponse.cs",
+              "DocumentMoniker": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.Web\\Users\\Create.CreateUserResponse.cs",
+              "RelativeDocumentMoniker": "todoappBE\\src\\todoappBE.Web\\Users\\Create.CreateUserResponse.cs",
+              "ToolTip": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.Web\\Users\\Create.CreateUserResponse.cs",
+              "RelativeToolTip": "todoappBE\\src\\todoappBE.Web\\Users\\Create.CreateUserResponse.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAewBAAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T21:37:12.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cs",
+              "DocumentMoniker": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.Web\\Users\\Create.cs",
+              "RelativeDocumentMoniker": "todoappBE\\src\\todoappBE.Web\\Users\\Create.cs",
+              "ToolTip": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.Web\\Users\\Create.cs",
+              "RelativeToolTip": "todoappBE\\src\\todoappBE.Web\\Users\\Create.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T21:35:38.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.Web\\Users\\Login.cs",
               "RelativeDocumentMoniker": "todoappBE\\src\\todoappBE.Web\\Users\\Login.cs",
               "ToolTip": "C:\\_Projects\\todoappBE\\todoappBE\\src\\todoappBE.Web\\Users\\Login.cs",
               "RelativeToolTip": "todoappBE\\src\\todoappBE.Web\\Users\\Login.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAgwB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBIAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-01T14:54:25.711Z",
               "EditorCaption": ""

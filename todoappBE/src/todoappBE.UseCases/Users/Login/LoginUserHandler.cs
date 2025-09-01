@@ -17,7 +17,7 @@ public class LoginUserHandler(
         .FirstOrDefault(u => u.Email == request.Email);
 
     if (user == null)
-      return Result.NotFound("Usuario no encontrado");
+      return Result.NotFound("User not found");
 
     if (!_passwordHasher.Verify(request.Password, user.PasswordHash))
       return Result.Unauthorized();

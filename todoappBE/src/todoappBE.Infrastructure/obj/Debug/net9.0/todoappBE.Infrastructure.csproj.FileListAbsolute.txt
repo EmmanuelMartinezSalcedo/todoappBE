@@ -17,3 +17,4 @@ C:\_Projects\todoappBE\todoappBE\src\todoappBE.Infrastructure\obj\Debug\net9.0\r
 C:\_Projects\todoappBE\todoappBE\src\todoappBE.Infrastructure\obj\Debug\net9.0\todoappBE.Infrastructure.pdb
 C:\_Projects\todoappBE\todoappBE\src\todoappBE.Infrastructure\obj\Debug\net9.0\todoappBE.Infrastructure.genruntimeconfig.cache
 C:\_Projects\todoappBE\todoappBE\src\todoappBE.Infrastructure\obj\Debug\net9.0\ref\todoappBE.Infrastructure.dll
+C:\_Projects\todoappBE\todoappBE\src\todoappBE.Infrastructure\obj\Debug\net9.0\todoappBE.Infrastructure.sourcelink.json
